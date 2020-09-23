@@ -1,0 +1,9 @@
+version: '2'
+services:
+  panache:
+    image: panache:latest
+    restart: always
+    container_name: panache
+    hostname: panache
+    ports:
+      - "7758:80"
