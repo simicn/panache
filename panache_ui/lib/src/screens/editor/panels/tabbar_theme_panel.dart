@@ -13,7 +13,7 @@ class TabBarThemePanel extends StatelessWidget {
 
   Color get selectedColor =>
       model.theme.tabBarTheme.labelColor ??
-      model.theme.primaryTextTheme.body2.color;
+      model.theme.primaryTextTheme.bodyText1.color;
 
   @override
   Widget build(BuildContext context) {
@@ -80,7 +80,7 @@ class _TabBarIndicatorSizeControl extends StatelessWidget {
               padding: const EdgeInsets.only(right: 18.0),
               child: Text(
                 'Indicator size',
-                style: appTextTheme.subtitle,
+                style: appTextTheme.subtitle2,
               ),
             ),
             Radio(
@@ -116,7 +116,7 @@ class _TabBarIndicatorControl extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     return FieldBorder(
       child: Row(children: [
-        Text('Indicator decoration', style: textTheme.subtitle),
+        Text('Indicator decoration', style: textTheme.subtitle2),
         DropdownButton(
             items: _indicatorDecorations.map((value) {
               return DropdownMenuItem(

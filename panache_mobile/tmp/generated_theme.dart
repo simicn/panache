@@ -65,55 +65,61 @@ final ThemeData myTheme = ThemeData(
     ),
   ),
   textTheme: TextTheme(
-    display4: TextStyle(
+    headline1: TextStyle(
       color: Color(0x8a000000),
       fontSize: 96.0,
       fontWeight: FontWeight.w300,
       fontStyle: FontStyle.normal,
     ),
-    display3: TextStyle(
+    headline2: TextStyle(
       color: Color(0x8a000000),
       fontSize: 60.0,
       fontWeight: FontWeight.w300,
       fontStyle: FontStyle.normal,
     ),
-    display2: TextStyle(
+    headline3: TextStyle(
       color: Color(0x8a000000),
       fontSize: 48.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    display1: TextStyle(
+    headline4: TextStyle(
       color: Color(0x8a000000),
       fontSize: 34.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    headline: TextStyle(
+    headline5: TextStyle(
       color: Color(0xdd000000),
       fontSize: 24.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    title: TextStyle(
+    headline6: TextStyle(
       color: Color(0xdd000000),
       fontSize: 20.0,
       fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
     ),
-    subhead: TextStyle(
+    subtitle1: TextStyle(
       color: Color(0xdd000000),
       fontSize: 16.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    body2: TextStyle(
+    subtitle2: TextStyle(
+      color: Color(0xff000000),
+      fontSize: 14.0,
+      fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.normal,
+    ),
+    bodyText1: TextStyle(
       color: Color(0xdd000000),
       fontSize: 14.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    body1: TextStyle(
+    bodyText2: TextStyle(
       color: Color(0xdd000000),
       fontSize: 16.0,
       fontWeight: FontWeight.w400,
@@ -127,12 +133,6 @@ final ThemeData myTheme = ThemeData(
     ),
     button: TextStyle(
       color: Color(0xdd000000),
-      fontSize: 14.0,
-      fontWeight: FontWeight.w500,
-      fontStyle: FontStyle.normal,
-    ),
-    subtitle: TextStyle(
-      color: Color(0xff000000),
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
@@ -145,55 +145,55 @@ final ThemeData myTheme = ThemeData(
     ),
   ),
   primaryTextTheme: TextTheme(
-    display4: TextStyle(
+    headline1: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: 96.0,
       fontWeight: FontWeight.w300,
       fontStyle: FontStyle.normal,
     ),
-    display3: TextStyle(
+    headline2: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: 60.0,
       fontWeight: FontWeight.w300,
       fontStyle: FontStyle.normal,
     ),
-    display2: TextStyle(
+    headline3: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: 48.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    display1: TextStyle(
+    headline4: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: 34.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    headline: TextStyle(
+    headline5: TextStyle(
       color: Color(0xffffffff),
       fontSize: 24.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    title: TextStyle(
+    headline6: TextStyle(
       color: Color(0xffffffff),
       fontSize: 20.0,
       fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
     ),
-    subhead: TextStyle(
+    subtitle1: TextStyle(
       color: Color(0xffffffff),
       fontSize: 16.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    body2: TextStyle(
+    bodyText1: TextStyle(
       color: Color(0xffffffff),
       fontSize: 14.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    body1: TextStyle(
+    bodyText2: TextStyle(
       color: Color(0xffffffff),
       fontSize: 16.0,
       fontWeight: FontWeight.w400,
@@ -211,7 +211,7 @@ final ThemeData myTheme = ThemeData(
       fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
     ),
-    subtitle: TextStyle(
+    subtitle2: TextStyle(
       color: Color(0xffffffff),
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
@@ -225,55 +225,61 @@ final ThemeData myTheme = ThemeData(
     ),
   ),
   accentTextTheme: TextTheme(
-    display4: TextStyle(
+    headline1: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: 96.0,
       fontWeight: FontWeight.w300,
       fontStyle: FontStyle.normal,
     ),
-    display3: TextStyle(
+    headline2: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: 60.0,
       fontWeight: FontWeight.w300,
       fontStyle: FontStyle.normal,
     ),
-    display2: TextStyle(
+    headline3: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: 48.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    display1: TextStyle(
+    headline4: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: 34.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    headline: TextStyle(
+    headline5: TextStyle(
       color: Color(0xffffffff),
       fontSize: 24.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    title: TextStyle(
+    headline6: TextStyle(
       color: Color(0xffffffff),
       fontSize: 20.0,
       fontWeight: FontWeight.w500,
       fontStyle: FontStyle.normal,
     ),
-    subhead: TextStyle(
+    subtitle1: TextStyle(
       color: Color(0xffffffff),
       fontSize: 16.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    body2: TextStyle(
+    subtitle2: TextStyle(
+      color: Color(0xffffffff),
+      fontSize: 14.0,
+      fontWeight: FontWeight.w500,
+      fontStyle: FontStyle.normal,
+    ),
+    bodyText1: TextStyle(
       color: Color(0xffffffff),
       fontSize: 14.0,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    body1: TextStyle(
+    bodyText2: TextStyle(
       color: Color(0xffffffff),
       fontSize: 16.0,
       fontWeight: FontWeight.w400,
@@ -286,12 +292,6 @@ final ThemeData myTheme = ThemeData(
       fontStyle: FontStyle.normal,
     ),
     button: TextStyle(
-      color: Color(0xffffffff),
-      fontSize: 14.0,
-      fontWeight: FontWeight.w500,
-      fontStyle: FontStyle.normal,
-    ),
-    subtitle: TextStyle(
       color: Color(0xffffffff),
       fontSize: 14.0,
       fontWeight: FontWeight.w500,

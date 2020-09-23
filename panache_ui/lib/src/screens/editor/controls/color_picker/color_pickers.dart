@@ -517,7 +517,7 @@ class HSLSliderRow extends GradientSliderRow {
         children: [
           Text(
             '$label',
-            style: labelStyle ?? Theme.of(context).textTheme.body1,
+            style: labelStyle ?? Theme.of(context).textTheme.bodyText2,
             overflow: TextOverflow.ellipsis,
           ),
           sliderBuilder(
@@ -571,7 +571,7 @@ class RGBSliderRow extends GradientSliderRow<RGB> {
     List<Widget> elements = [
       Text(
         '$label : ${value.round()}',
-        style: labelStyle ?? Theme.of(context).textTheme.body1,
+        style: labelStyle ?? Theme.of(context).textTheme.bodyText2,
         overflow: TextOverflow.ellipsis,
       ),
       sliderBuilder(

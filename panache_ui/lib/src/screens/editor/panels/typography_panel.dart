@@ -25,34 +25,34 @@ class TypographyThemePanel extends StatelessWidget {
       );
 
   List<Widget> _buildTextThemeEditorFields(ThemeModel model) {
-    final headline = txtTheme.headline;
-    final title = txtTheme.title;
-    final subhead = txtTheme.subhead;
-    final subtitle = txtTheme.subtitle;
-    final body1 = txtTheme.body1;
-    final body2 = txtTheme.body2;
+    final headline6 = txtTheme.headline6;
+    final headline5 = txtTheme.headline5;
+    final headline4 = txtTheme.headline4;
+    final headline3 = txtTheme.headline3;
+    final headline2 = txtTheme.headline2;
+    final headline1 = txtTheme.headline1;
+    final subtitle1 = txtTheme.subtitle1;
+    final subtitle2 = txtTheme.subtitle2;
+    final bodyText2 = txtTheme.bodyText2;
+    final bodyText1 = txtTheme.bodyText1;
     final caption = txtTheme.caption;
     final overline = txtTheme.overline;
     final button = txtTheme.button;
-    final display1 = txtTheme.display1;
-    final display2 = txtTheme.display2;
-    final display3 = txtTheme.display3;
-    final display4 = txtTheme.display4;
 
     final styleNames = [
-      TextStyleControlData(styleName: 'headline', style: headline),
-      TextStyleControlData(styleName: 'title', style: title),
-      TextStyleControlData(styleName: 'subhead', style: subhead),
-      TextStyleControlData(styleName: 'subtitle', style: subtitle),
-      TextStyleControlData(styleName: 'body1', style: body1),
-      TextStyleControlData(styleName: 'body2', style: body2),
+      TextStyleControlData(styleName: 'headline6', style: headline6),
+      TextStyleControlData(styleName: 'headline5', style: headline5),
+      TextStyleControlData(styleName: 'headline4', style: headline4),
+      TextStyleControlData(styleName: 'headline3', style: headline3),
+      TextStyleControlData(styleName: 'headline2', style: headline2),
+      TextStyleControlData(styleName: 'headline1', style: headline1),
+      TextStyleControlData(styleName: 'subtitle1', style: subtitle1),
+      TextStyleControlData(styleName: 'subtitle2', style: subtitle2),
+      TextStyleControlData(styleName: 'bodyText2', style: bodyText2),
+      TextStyleControlData(styleName: 'bodyText1', style: bodyText1),
       TextStyleControlData(styleName: 'caption', style: caption),
       TextStyleControlData(styleName: 'overline', style: overline),
       TextStyleControlData(styleName: 'button', style: button),
-      TextStyleControlData(styleName: 'display1', style: display1),
-      TextStyleControlData(styleName: 'display2', style: display2),
-      TextStyleControlData(styleName: 'display3', style: display3),
-      TextStyleControlData(styleName: 'display4', style: display4),
     ];
 
     return styleNames.map((data) {

@@ -23,11 +23,11 @@ class PanacheLogo extends StatelessWidget {
             children: [
               TextSpan(
                 text: ' alpha',
-                style: textTheme.body1.copyWith(color: Colors.grey),
+                style: textTheme.bodyText2.copyWith(color: Colors.grey),
               )
             ],
           ),
-          style: minimized ? textTheme.subhead : textTheme.display1,
+          style: minimized ? textTheme.subtitle1 : textTheme.headline4,
         )
       ],
     );

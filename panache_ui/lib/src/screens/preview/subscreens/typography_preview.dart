@@ -20,20 +20,12 @@ class TypographyPreview extends StatelessWidget {
       child: ListView(
         children: [
           Text(
-            'Headline\nThe quick brown fox jumps over the lazy dog\n',
-            style: textTheme.headline,
+            'Subtitle 1\nThe quick brown fox jumps over the lazy dog\n',
+            style: textTheme.subtitle1,
           ),
           Text(
-            'Subhead\nThe quick brown fox jumps over the lazy dog\n',
-            style: textTheme.subhead,
-          ),
-          Text(
-            'Title\nThe quick brown fox jumps over the lazy dog\n',
-            style: textTheme.title,
-          ),
-          Text(
-            'Subtitle\nThe quick brown fox jumps over the lazy dog\n',
-            style: textTheme.subtitle,
+            'Subtitle 2\nThe quick brown fox jumps over the lazy dog\n',
+            style: textTheme.subtitle2,
           ),
           Text(
             'Caption\nThe quick brown fox jumps over the lazy dog\n',
@@ -45,11 +37,11 @@ class TypographyPreview extends StatelessWidget {
           ),
           Text(
             'Body 1\nThe quick brown fox jumps over the lazy dog\nThe quick brown fox jumps over the lazy dog\nThe quick brown fox jumps over the lazy dog\n',
-            style: textTheme.body1,
+            style: textTheme.bodyText2,
           ),
           Text(
-            'Body 2\nThe quick brown fox jumps over the lazy dog\nThe quick brown fox jumps over the lazy dog\nThe quick brown fox jumps over the lazy dog\n',
-            style: textTheme.body2,
+            'bodyText 1\nThe quick brown fox jumps over the lazy dog\nThe quick brown fox jumps over the lazy dog\nThe quick brown fox jumps over the lazy dog\n',
+            style: textTheme.bodyText1,
           ),
           FlatButton(
               child: Text(
@@ -58,20 +50,28 @@ class TypographyPreview extends StatelessWidget {
               ),
               onPressed: () {}),
           Text(
-            'Display 1',
-            style: textTheme.display1,
+            'Headline 6\nThe quick brown fox jumps over the lazy dog\n',
+            style: textTheme.headline6,
           ),
           Text(
-            'Display 2',
-            style: textTheme.display2,
+            'Headline 5\nThe quick brown fox jumps over the lazy dog\n',
+            style: textTheme.headline5,
           ),
           Text(
-            'Display 3',
-            style: textTheme.display3,
+            'Headline 4',
+            style: textTheme.headline4,
           ),
           Text(
-            'Display 4',
-            style: textTheme.display4,
+            'Headline 3',
+            style: textTheme.headline3,
+          ),
+          Text(
+            'Headline 2',
+            style: textTheme.headline2,
+          ),
+          Text(
+            'Headline 1',
+            style: textTheme.headline1,
           ),
         ],
       ),

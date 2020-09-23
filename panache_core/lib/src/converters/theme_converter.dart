@@ -56,7 +56,7 @@ String themeToCode(ThemeData theme) {
     inputDecorationTheme: ${inputDecorationThemeToCode(
     theme.inputDecorationTheme,
     theme.hintColor,
-    theme.textTheme.body1,
+    theme.textTheme.bodyText2,
     theme.brightness,
   )},
     iconTheme: ${iconThemeToCode(theme.iconTheme)},
@@ -64,15 +64,15 @@ String themeToCode(ThemeData theme) {
     accentIconTheme: ${iconThemeToCode(theme.accentIconTheme)},
     sliderTheme: ${sliderThemeToCode(
     theme.sliderTheme,
-    theme.accentTextTheme.body2,
+    theme.accentTextTheme.bodyText1,
   )},
     tabBarTheme: ${tabBarThemeToCode(
     theme.tabBarTheme,
-    defaultLabelColor: theme.primaryTextTheme.body2.color,
+    defaultLabelColor: theme.primaryTextTheme.bodyText1.color,
   )},
     chipTheme: ${chipThemeToCode(
     theme.chipTheme,
-    defaultLabelStyle: theme.textTheme.body2,
+    defaultLabelStyle: theme.textTheme.bodyText1,
   )},
     dialogTheme: ${dialogThemeToCode(theme.dialogTheme)},
   );
@@ -125,18 +125,18 @@ Map<String, dynamic> themeToMap(ThemeData theme) {
     'inputDecorationTheme': inputDecorationThemeToMap(
         theme.inputDecorationTheme,
         theme.hintColor,
-        theme.textTheme.body1,
+        theme.textTheme.bodyText2,
         theme.brightness),
     'iconTheme': iconThemeToMap(theme.iconTheme),
     'primaryIconTheme': iconThemeToMap(theme.primaryIconTheme),
     'accentIconTheme': iconThemeToMap(theme.accentIconTheme),
     /* FIXME'sliderTheme':
-        sliderThemeToMap(theme.sliderTheme, theme.accentTextTheme.body2),*/
+        sliderThemeToMap(theme.sliderTheme, theme.accentTextTheme.bodyText1),*/
     'tabBarTheme': tabBarThemeToMap(theme.tabBarTheme,
-        defaultLabelColor: theme.primaryTextTheme.body2.color),
+        defaultLabelColor: theme.primaryTextTheme.bodyText1.color),
     'chipTheme': chipThemeToMap(
       theme.chipTheme,
-      defaultLabelStyle: theme.textTheme.body2,
+      defaultLabelStyle: theme.textTheme.bodyText1,
     ),
     'dialogTheme': dialogThemeToMap(theme.dialogTheme),
   };

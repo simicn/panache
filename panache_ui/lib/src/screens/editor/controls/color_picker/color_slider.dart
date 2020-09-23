@@ -834,7 +834,7 @@ class _RenderSlider extends RenderBox {
     if (label != null) {
       _labelPainter
         ..text = new TextSpan(
-            style: _theme.accentTextTheme.body2
+            style: _theme.accentTextTheme.bodyText1
                 .copyWith(color: getContrastColor(_thumbColor)),
             text: label)
         ..textDirection = textDirection

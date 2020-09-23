@@ -303,7 +303,7 @@ class _ColorTextFieldState extends State<ColorTextField> {
         maxLines: 1,
         textAlign: TextAlign.center,
         controller: fieldController,
-        style: Theme.of(context).textTheme.body1.copyWith(fontSize: 12),
+        style: Theme.of(context).textTheme.bodyText2.copyWith(fontSize: 12),
         decoration: InputDecoration(
             prefixText: '#',
             counterText: '',

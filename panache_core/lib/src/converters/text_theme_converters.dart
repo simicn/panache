@@ -6,18 +6,18 @@ import 'converter_utils.dart';
 
 String textThemeToCode(TextTheme textTheme) {
   return '''TextTheme(
-      display4: ${textStyleToCode(textTheme.display4)},
-      display3: ${textStyleToCode(textTheme.display3)},
-      display2: ${textStyleToCode(textTheme.display2)},
-      display1: ${textStyleToCode(textTheme.display1)},
-      headline: ${textStyleToCode(textTheme.headline)},
-      title: ${textStyleToCode(textTheme.title)},
-      subhead: ${textStyleToCode(textTheme.subhead)},
-      body2: ${textStyleToCode(textTheme.body2)},
-      body1: ${textStyleToCode(textTheme.body1)},
+      headline1: ${textStyleToCode(textTheme.headline1)},
+      headline2: ${textStyleToCode(textTheme.headline2)},
+      headline3: ${textStyleToCode(textTheme.headline3)},
+      headline4: ${textStyleToCode(textTheme.headline4)},
+      headline5: ${textStyleToCode(textTheme.headline5)},
+      headline6: ${textStyleToCode(textTheme.headline6)},
+      subtitle1: ${textStyleToCode(textTheme.subtitle1)},
+      subtitle2: ${textStyleToCode(textTheme.subtitle2)},
+      bodyText1: ${textStyleToCode(textTheme.bodyText1)},
+      bodyText2: ${textStyleToCode(textTheme.bodyText2)},
       caption: ${textStyleToCode(textTheme.caption)},
       button: ${textStyleToCode(textTheme.button)},
-      subtitle: ${textStyleToCode(textTheme.subtitle)},
       overline: ${textStyleToCode(textTheme.overline)},
     )''';
 }
@@ -50,18 +50,18 @@ Map<String, dynamic> textThemeToMap(TextTheme textTheme) {
   assert(textTheme != null);
 
   return <String, dynamic>{
-    'display4': textStyleToMap(textTheme.display4),
-    'display3': textStyleToMap(textTheme.display3),
-    'display2': textStyleToMap(textTheme.display2),
-    'display1': textStyleToMap(textTheme.display1),
-    'headline': textStyleToMap(textTheme.headline),
-    'title': textStyleToMap(textTheme.title),
-    'subhead': textStyleToMap(textTheme.subhead),
-    'body2': textStyleToMap(textTheme.body2),
-    'body1': textStyleToMap(textTheme.body1),
+    'headline1': textStyleToMap(textTheme.headline1),
+    'headline2': textStyleToMap(textTheme.headline2),
+    'headline3': textStyleToMap(textTheme.headline3),
+    'headline4': textStyleToMap(textTheme.headline4),
+    'headline5': textStyleToMap(textTheme.headline5),
+    'headline6': textStyleToMap(textTheme.headline6),
+    'subtitle1': textStyleToMap(textTheme.subtitle1),
+    'subtitle2': textStyleToMap(textTheme.subtitle2),
+    'bodyText1': textStyleToMap(textTheme.bodyText1),
+    'bodyText2': textStyleToMap(textTheme.bodyText2),
     'caption': textStyleToMap(textTheme.caption),
     'button': textStyleToMap(textTheme.button),
-    'subtitle': textStyleToMap(textTheme.subtitle),
     'overline': textStyleToMap(textTheme.overline),
   };
 }
@@ -92,18 +92,18 @@ TextTheme textThemeFromMap(Map<String, dynamic> data) {
   if (data == null) return null;
 
   return TextTheme(
-    display4: textStyleFromMap(data['display4']),
-    display3: textStyleFromMap(data['display3']),
-    display2: textStyleFromMap(data['display2']),
-    display1: textStyleFromMap(data['display1']),
-    headline: textStyleFromMap(data['headline']),
-    title: textStyleFromMap(data['title']),
-    subhead: textStyleFromMap(data['subhead']),
-    body2: textStyleFromMap(data['body2']),
-    body1: textStyleFromMap(data['body1']),
+    headline1: textStyleFromMap(data['headline1']),
+    headline2: textStyleFromMap(data['headline2']),
+    headline3: textStyleFromMap(data['headline3']),
+    headline4: textStyleFromMap(data['headline4']),
+    headline5: textStyleFromMap(data['headline5']),
+    headline6: textStyleFromMap(data['headline6']),
+    subtitle1: textStyleFromMap(data['subtitle1']),
+    subtitle2: textStyleFromMap(data['subtitle2']),
+    bodyText1: textStyleFromMap(data['bodyText1']),
+    bodyText2: textStyleFromMap(data['bodyText2']),
     caption: textStyleFromMap(data['caption']),
     button: textStyleFromMap(data['button']),
-    subtitle: textStyleFromMap(data['subtitle']),
     overline: textStyleFromMap(data['overline']),
   );
 }

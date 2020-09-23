@@ -7,13 +7,13 @@ const panachePrimarySwatch = Colors.blueGrey;
       fontFamily: 'Roboto',
       primarySwatch: panachePrimarySwatch,
       textTheme: Typography.blackCupertino.copyWith(
-        body1: Typography.blackCupertino.body1.copyWith(fontSize: 12),
-        body2: Typography.blackCupertino.body2.copyWith(fontSize: 12),
-        subtitle: Typography.blackCupertino.subtitle
+        bodyText2: Typography.blackCupertino.bodyText2.copyWith(fontSize: 12),
+        bodyText1: Typography.blackCupertino.bodyText1.copyWith(fontSize: 12),
+        subtitle2: Typography.blackCupertino.subtitle2
             .copyWith(color: panachePrimarySwatch.shade400, fontSize: 12),
-        title: Typography.blackCupertino.title
+        headline6: Typography.blackCupertino.headline6
             .copyWith(color: panachePrimarySwatch.shade300),
-        headline: Typography.blackCupertino.headline
+        headline5: Typography.blackCupertino.headline5
             .copyWith(color: panachePrimarySwatch),
       ),
       primaryIconTheme: IconThemeData.fallback().copyWith(color: Colors.yellow),
@@ -28,12 +28,12 @@ ThemeData buildAppTheme(ThemeData theme, MaterialColor primarySwatch) {
 
   return theme.copyWith(
     textTheme: textTheme.copyWith(
-      body1: textTheme.body1.copyWith(fontSize: 12),
-      body2: textTheme.body2.copyWith(fontSize: 12),
-      subtitle:
-          textTheme.subtitle.copyWith(color: primarySwatch[400], fontSize: 12),
-      title: textTheme.title.copyWith(color: primarySwatch[300]),
-      headline: textTheme.headline.copyWith(color: primarySwatch),
+      bodyText2: textTheme.bodyText2.copyWith(fontSize: 12),
+      bodyText1: textTheme.bodyText1.copyWith(fontSize: 12),
+      subtitle2:
+          textTheme.subtitle2.copyWith(color: primarySwatch[400], fontSize: 12),
+      headline6: textTheme.headline6.copyWith(color: primarySwatch[300]),
+      headline5: textTheme.headline5.copyWith(color: primarySwatch),
     ),
     primaryColor: primarySwatch,
     primaryColorBrightness: ThemeData.estimateBrightnessForColor(primarySwatch),

@@ -69,11 +69,11 @@ class SliderPropertyControlState extends State<SliderPropertyControl> {
         RichText(
           text: TextSpan(
               text: '${widget.label} : ',
-              style: textTheme.subtitle,
+              style: textTheme.subtitle2,
               children: [
                 TextSpan(
                   text: updatedValue.toStringAsFixed(2),
-                  style: textTheme.body1,
+                  style: textTheme.bodyText2,
                 )
               ]),
         )
