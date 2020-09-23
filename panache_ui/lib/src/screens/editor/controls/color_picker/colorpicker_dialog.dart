@@ -41,7 +41,7 @@ class _ColorPickerDialogState extends State<ColorPickerDialog>
   @override
   void initState() {
     currentColor = widget.currentColor ?? Colors.blue;
-    tabController = TabController(length: 3, vsync: this);
+    tabController = TabController(length: 4, vsync: this);
     tabController.addListener(
         () => setState(() => currentTabIndex = tabController.index));
     super.initState();
@@ -91,6 +91,12 @@ class _ColorPickerDialogState extends State<ColorPickerDialog>
         color: currentColor,
       );
 
+  _buildARGBPicker(Orientation orientation) => ARGBPicker(
+        onColor: (Color color) => setState(() => currentColor = color),
+        color: currentColor,
+        orientation: orientation,
+      );
+
   _getPicker(int index, Orientation orientation) {
     switch (index) {
       case 0:
@@ -99,6 +105,8 @@ class _ColorPickerDialogState extends State<ColorPickerDialog>
         return _buildHSLPicker(orientation);
       case 2:
         return _buildMaterialPicker();
+      case 3:
+        return _buildARGBPicker(orientation);
       default:
         return _buildRGBPicker(orientation);
     }
@@ -113,6 +121,7 @@ class _ColorPickerDialogState extends State<ColorPickerDialog>
             Tab(text: 'RGB'),
             Tab(text: 'HSL'),
             Tab(text: 'Material'),
+            Tab(text: 'ARGB'),
           ],
           controller: tabController,
           labelColor: Colors.blueGrey,
@@ -142,6 +151,7 @@ class _ColorPickerDialogState extends State<ColorPickerDialog>
             Tab(text: 'RGB'),
             Tab(text: 'HSL'),
             Tab(text: 'Material'),
+            Tab(text: 'ARGB'),
           ],
           controller: tabController,
           labelColor: Colors.blueGrey,

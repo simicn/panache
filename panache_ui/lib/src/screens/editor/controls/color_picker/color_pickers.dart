@@ -171,6 +171,151 @@ class RGBPickerState extends State<RGBPicker> {
   }
 }
 
+class ARGBPicker extends StatefulWidget {
+  ARGBPicker(
+      {@required this.color,
+      this.onColor,
+      this.dynamicBackground: false,
+      this.orientation});
+
+  final ColorCallback onColor;
+  final Color color;
+  final bool dynamicBackground;
+  final Orientation orientation;
+
+  @override
+  ARGBPickerState createState() => new ARGBPickerState(color);
+}
+
+class ARGBPickerState extends State<ARGBPicker> {
+  Color _color;
+
+  set color(Color color) {
+    _color = color;
+    widget.onColor(_color);
+  }
+
+  double _r = 0.0;
+
+  set r(double r) {
+    _r = r;
+    updateColor();
+  }
+
+  double _g = 0.0;
+
+  set g(double g) {
+    _g = g;
+    updateColor();
+  }
+
+  double _b = 0.0;
+
+  set b(double b) {
+    _b = b;
+    updateColor();
+  }
+
+  double _a = 0.0;
+
+  set a(double a) {
+    _a = a;
+    updateColor();
+  }
+
+  ARGBPickerState(this._color) {
+    _updateColorComponents();
+  }
+
+  void _updateColorComponents() {
+    _r = _color.red.toDouble();
+    _g = _color.green.toDouble();
+    _b = _color.blue.toDouble();
+    _a = _color.alpha.toDouble();
+  }
+
+  void updateColor() => setState(() =>
+      color = Color.fromARGB(_a.toInt(), _r.toInt(), _g.toInt(), _b.toInt()));
+
+  @override
+  void didUpdateWidget(ARGBPicker oldWidget) {
+    if (widget.color != oldWidget.color) {
+      _color = widget.color;
+      _updateColorComponents();
+    }
+    super.didUpdateWidget(oldWidget);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    print('RGBPickerState.build... $_color');
+    final hsl = HSLColor.fromColor(_color);
+    final shade50 = hsl.withLightness(.95).toColor();
+    final bgColor =
+        widget.dynamicBackground ? shade50.withOpacity(1) : Colors.white;
+
+    return Container(
+      color: bgColor,
+      padding: EdgeInsets.all(10.0),
+      margin: EdgeInsets.symmetric(vertical: 10.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          RGBSliderRow(
+              sliderKey: Key('sldR'),
+              sliderBuilder: buildSlider,
+              startColor: Colors.black,
+              endColor: Color.fromRGBO(255, 0, 0, 1.0),
+              thumbColor: Color.fromRGBO(_color.red, 0, 0, 1),
+              value: _r,
+              label: 'Red',
+              labelStyle: TextStyle(color: Colors.red.shade600, fontSize: 12),
+              orientation: widget.orientation,
+              maxValue: 255.0,
+              onChange: (value) => setState(() => r = value)),
+          RGBSliderRow(
+              sliderKey: Key('sldG'),
+              sliderBuilder: buildSlider,
+              startColor: Colors.black,
+              endColor: Color.fromRGBO(0, 255, 0, 1.0),
+              thumbColor: Color.fromRGBO(0, _color.green, 0, 1),
+              value: _g,
+              label: 'Green',
+              labelStyle: TextStyle(color: Colors.green.shade600, fontSize: 12),
+              orientation: widget.orientation,
+              maxValue: 255.0,
+              onChange: (value) => setState(() => g = value)),
+          RGBSliderRow(
+              sliderKey: Key('sldB'),
+              sliderBuilder: buildSlider,
+              value: _b,
+              label: 'Blue',
+              startColor: Colors.black,
+              endColor: Color.fromRGBO(0, 0, 255, 1.0),
+              thumbColor: Color.fromRGBO(0, 0, _color.blue, 1),
+              labelStyle: TextStyle(color: Colors.blue.shade600, fontSize: 12),
+              orientation: widget.orientation,
+              maxValue: 255.0,
+              onChange: (value) => setState(() => b = value)),
+          RGBSliderRow(
+              sliderKey: Key('sldA'),
+              sliderBuilder: buildSlider,
+              value: _a,
+              label: 'Alpha',
+              startColor: Colors.black,
+              endColor: _color.withAlpha(255),
+              thumbColor: Color.fromRGBO(0, 0, _color.blue, 1),
+              labelStyle: TextStyle(color: Colors.blue.shade600, fontSize: 12),
+              orientation: widget.orientation,
+              maxValue: 255.0,
+              onChange: (value) => setState(() => a = value))
+        ],
+      ),
+    );
+  }
+}
+
 class HSLPicker extends StatefulWidget {
   HSLPicker(
       {@required this.color,
