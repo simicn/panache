@@ -109,13 +109,13 @@ final ThemeData myTheme = ThemeData(
     ),
     bodyText1: TextStyle(
       color: Color(0xdd000000),
-      fontSize: 14,
+      fontSize: 16,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
     bodyText2: TextStyle(
       color: Color(0xdd000000),
-      fontSize: 16,
+      fontSize: 14,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
@@ -429,10 +429,10 @@ final ThemeData myTheme = ThemeData(
     disabledInactiveTickMarkColor: null,
     thumbColor: null,
     disabledThumbColor: null,
-    thumbShape: null(),
+    thumbShape: null,
     overlayColor: null,
     valueIndicatorColor: null,
-    valueIndicatorShape: null(),
+    valueIndicatorShape: null,
     showValueIndicator: null,
     valueIndicatorTextStyle: TextStyle(
       color: Color(0xffffffff),
