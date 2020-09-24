@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:panache_core/panache_core.dart';
+import 'package:panache_web/theme.dart';
 
 class WebThemeService extends ThemeService<dynamic, dynamic> {
   final Function(String, String) themeExporter;
@@ -41,6 +42,7 @@ class WebThemeService extends ThemeService<dynamic, dynamic> {
       fontFamily: 'Roboto',
       primarySwatch: primarySwatch,
       brightness: brightness,
+      textTheme: myTheme.textTheme,
       platform: TargetPlatform.iOS
       /*Platform.isAndroid
              ? TargetPlatform.android
