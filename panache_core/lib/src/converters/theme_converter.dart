@@ -314,7 +314,7 @@ SliderThemeData sliderThemeFromMap(Map<String, dynamic> data) {
 }
 
 String instanceToCode(dynamic instance) =>
-    '$instance()'.replaceAll('Instance of \'', '').replaceAll('\'', '');
+    '$instance'.replaceAll('Instance of \'', '').replaceAll('\'', '');
 
 String dialogThemeToCode(DialogTheme iconTheme) {
   return '''DialogTheme(
